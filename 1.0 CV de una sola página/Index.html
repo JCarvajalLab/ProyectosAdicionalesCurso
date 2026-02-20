@@ -1,118 +1,126 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Meta NAME descripcion no visible de la web -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Jordan Carvajal, desarrollador frontend junior"
-    />
-    <meta name="author" content="Jordan Carvajal" />
 
-    <!-- Meta OG para compartir redes sociales y previews -->
-    <meta property="og:title" content="Curriculum practica" />
-    <meta
-      property="og:description"
-      content="Currículum de desarrollador frontend junior"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/JCarvajalLab" />
+<head>
+  <meta charset="UTF-8" />
+  <!-- Meta NAME descripcion no visible de la web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Titulo -->
+  <title>Curriculum</title>
+  <!-- Descripcion y author -->
+  <meta name="description" content="Jordan Carvajal, desarrollador frontend junior" />
+  <meta name="author" content="Jordan Carvajal" />
 
-    <!-- Icono en la pestana del navegador -->
-    <link rel="icon" href="Assets/img/favicon.ico" />
-    <!-- Style -->
-    <link rel="stylesheet" href="Assets/css/style.css" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://jcarvajal.dev" />
+  <!-- Meta OG para compartir redes sociales y previews -->
+  <meta property="og:title" content="Curriculum practica" />
+  <meta property="og:description" content="Currículum de desarrollador frontend junior" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tusitio.com/img/preview.png" />
+  <meta property="og:site_name" content="Jordan Carvajal CV" />
+  <meta property="og:url" content="https://jcarvajal.dev" />
 
-    <title>Curriculum</title>
-  </head>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Curriculum practica" />
+  <meta name="twitter:description" content="Currículum de desarrollador frontend junior" />
+  <meta name="twitter:image" content="https://tusitio.com/img/preview.png" />
+  <meta name="twitter:url" content="https://jcarvajal.dev" />
 
-  <body>
-    <div class="container">
-      <header>
-        <h1>Jordan Carvajal</h1>
-        <h2>Junior FrontEnd Developer</h2>
-        <p id="addres">
-          123 Your Street <br />
-          Your City, ST 12345 <br />
-          <!-- Se agregan enlaces funcionales, pero no reales -->
-          <a href="tel:+56930225272">+569 30225272</a><br />
-          <a href="mailto:jordan.carvajal@gmail.com"
-            >jordan.carvajal@gmail.com</a
-          >
+  <!-- Icono en la pestana del navegador favicon-->
+  <link rel="icon" href="Assets/img/favicon.ico" />
+  <!-- Style -->
+  <link rel="stylesheet" href="Assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Jordan Carvajal</h1>
+      <h2>Junior FrontEnd Developer</h2>
+      <p id="addres">
+        123 Your Street <br />
+        Your City, ST 12345 <br />
+        <!-- Se agregan enlaces funcionales, pero no reales -->
+        <a href="tel:+56930225272">+569 30225272</a><br />
+        <a href="mailto:jordan.carvajal@gmail.com">jordan.carvajal@gmail.com</a>
+      </p>
+    </header>
+    <!-- Se crean secciones para separar los temas y en experiencia se agrega un article para separar las diferentes experiencias -->
+    <main>
+      <section>
+        <h3>Skils</h3>
+        <p>
+          HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive
+          Web Design, Technical Writing, Presentation
         </p>
-      </header>
-      <!-- Se crean secciones para separar los temas y en experiencia se agrega un article para separar las diferentes experiencias -->
-      <main>
-        <section>
-          <h3>Skils</h3>
-          <p>
-            HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive
-            Web Design, Technical Writing, Presentation
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <h4>School Name, Location - Degree</h4>
+        <time datetime="2026-02-20T14:30" class="date">20 Feb 2026 19:30</time>
+        <p>List of exciting things you did at university</p>
+      </section>
+      <!-- Nota personal los <p> no pueden tener a dentro un h1,h2,etc... -->
+      <section>
+        <h3>Experience</h3>
+        <article>
+          <h4>Company Name, Location - Job Title</h4>
+
+          <time datetime="2026-02-20T14:30" class="date">20 Feb 2026 19:30</time>
+          <ul>
+            <li>List of achievements</li>
+            <li>List of achievements</li>
+            <li>List of achievements</li>
+          </ul>
+          <p id="skills">
+            Skills: List of skills used or gained at this company
           </p>
-        </section>
+        </article>
+        <article>
+          <h4>Company Name, Location - Job Title</h4>
+          <time datetime="2026-02-20T14:30" class="date">20 Feb 2026 19:30</time>
+          <ul>
+            <li>List of achievements</li>
+            <li>List of achievements</li>
+            <li>List of achievements</li>
+          </ul>
+          <p id="skills">
+            Skills: List of skills used or gained at this company
+          </p>
+        </article>
+      </section>
+      <!-- Se agregan proyectos y repositorios  -->
 
-        <section>
-          <h3>Education</h3>
-          <h4>School Name, Location - Degree</h4>
-          <p id="date">Month 20xx to Month 20xx</p>
-          <p>List of exciting things you did at university</p>
-        </section>
-        <!-- Nota personal los <p> no pueden tener a dentro un h1,h2,etc... -->
-        <section>
-          <h3>Experience</h3>
-          <article>
-            <h4>Company Name, Location - Job Title</h4>
-            <p id="date">Month 20xx to Month 20xx</p>
-            <ul>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-            </ul>
-            <p id="skills">
-              Skills: List of skills used or gained at this company
-            </p>
-          </article>
-          <article>
-            <h4>Company Name, Location - Job Title</h4>
-            <p id="date">Month 20xx to Month 20xx</p>
-            <ul>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-            </ul>
-            <p id="skills">
-              Skills: List of skills used or gained at this company
-            </p>
-          </article>
-        </section>
-        <!-- Se agregan proyectos y repositorios  -->
+      <section>
+        <h3>Proyects</h3>
+        <article>
+          <h4>CRUD Proyect</h4>
+          <time datetime="2026-02-20T14:30" class="date">20 Feb 2026 19:30</time><br />
+          <img src="Assets/img/Crud.png" alt="" /><br />
+          <a href="https://www.google.com">
+            <button class="button button1">Revisar proyecto</button>
+          </a>
+        </article>
+        <article>
+          <h4>CRUD Proyect</h4>
+          <time datetime="2026-02-20T14:30" class="date">20 Feb 2026 19:30</time>
+          <br />
+          <img src="Assets/img/Crud2.png" alt="" /><br />
+          <a href="https://www.google.com">
+            <button class="button button1">Revisar proyecto</button>
+          </a>
+        </article>
+      </section>
+    </main>
+    <!-- se le agrega al <p> -->
+    <footer>
+      <h3>Across the Internet</h3>
+      <p>Add your LinkedIn, GitHub profile links</p>
+    </footer>
+  </div>
+</body>
 
-        <section>
-          <h3>Proyects</h3>
-          <article>
-            <h4>CRUD Proyect</h4>
-            <p id="date">Month 20xx to Month 20xx</p>
-            <img src="Assets/img/Crud.png" alt="" /><br />
-            <a href="https://www.google.com">
-              <button class="button button1">Revisar proyecto</button>
-            </a>
-          </article>
-          <article>
-            <h4>CRUD Proyect</h4>
-            <p id="date">Month 20xx to Month 20xx</p>
-            <img src="Assets/img/Crud2.png" alt="" /><br />
-            <a href="https://www.google.com">
-              <button class="button button1">Revisar proyecto</button>
-            </a>
-          </article>
-        </section>
-      </main>
-      <!-- se le agrega al <p> -->
-      <footer>
-        <h3>Across the Internet</h3>
-        <p>Add your LinkedIn, GitHub profile links</p>
-      </footer>
-    </div>
-  </body>
 </html>

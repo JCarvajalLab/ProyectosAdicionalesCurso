@@ -19,7 +19,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-#date, #skills{
+.date, #skills{
   color: #949494;
   margin: 10px;
 }
