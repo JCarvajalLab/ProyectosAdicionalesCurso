@@ -43,3 +43,21 @@ h4 {
   color: #0f6fbe;
   margin-top: 25px;
 }
+
+img{
+  max-width: 300px;
+}
+
+button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #04AA6D;}
