@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#addres {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#date, #skills{
+  color: #949494;
+  margin: 10px;
+}
+
+h1 {
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+h2 {
+  color: #004128;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+h3 {
+  color: #099b63;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+h4 {
+  color: #0f6fbe;
+  margin-top: 25px;
+}
