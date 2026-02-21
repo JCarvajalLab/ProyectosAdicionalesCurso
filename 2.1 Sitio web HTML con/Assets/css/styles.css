@@ -1,7 +1,21 @@
-* {
+html,
+body {
+  height: 100%;
   margin: 0;
-  padding: 0;
 }
+
+body {
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  padding: 40px;
+  background: #f5f5f5;
+}
+main {
+  flex: 1;
+}
+
 /* Header de la pagina web */
 .nav {
   display: flex;
@@ -22,119 +36,123 @@
   color: black;
 }
 
-
-/* body {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: Arial;
-  padding: 40px;
-} */
-
-body{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding:40px;
-  background:#f5f5f5;
-}
-
 /* contenedor general */
-.container{
-  max-width:1200px;
-  margin:auto;
+.container {
+  max-width: 1200px;
+  margin: auto;
   /* background:red; */
-
 }
 
-/* fila de cards */
-.main-cards{
-  display:flex;
-  gap:20px;
-  margin-top:30px;
-}
 
-/* estilo card */
-.card{
-  border:1px solid #ccc;
-  padding:20px;
-  flex:1;
-  border-radius:10px;
-  background:white;
-}
-
-.reviews{
-  display:flex;
-  gap:20px;
-  margin-top:20px;
-}
-
-.review-card{
-  border:1px solid #ccc;
-  padding:15px;
-  border-radius:10px;
-  background:white;
-  flex:1;
-}
 /* Titulo de fronend developer */
-h1{
+h1 {
   text-align: center;
   padding-top: 20px;
   margin: 20px;
 }
-.container > p{
+.container > p {
   text-align: center;
 }
+
+/* Estilo para las main cards  */
+
+/* fila de cards */
+.main-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* estilo card */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+  background: white;
+}
+
 /* Card projects */
-.projects  p{
+.projects p {
   margin: 30px;
-  border-bottom: 1px solid #ddd; 
-  
+  border-bottom: 1px solid #ddd;
 }
 
 /* Card Work Experience */
 
-.experience .job{
+.experience .job {
   margin: 15px 0;
 }
-.experience h4{
+.experience h4 {
   margin-bottom: 5px;
 }
-.experience a{
+.experience a {
   color: #1a73e8;
   text-decoration: none;
   font-size: 14px;
 }
-.experience a:hover{
-  text-decoration:underline;
+.experience a:hover {
+  text-decoration: underline;
 }
-.experience hr{
-  border:none;
-  border-top:1px solid #ddd;
-  margin:15px 0;
+.experience hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
 }
 /* Card Work Education */
 
-.education h4{
+.education h4 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
-.courses{
+.courses {
   list-style: none;
   padding: 0;
 }
-.courses li{
+.courses li {
   margin: 6px 0;
 }
-.courses li::before{
-  content:"– ";
+.courses li::before {
+  content: "– ";
 }
-.education hr{
-  border:none;
-  border-top:1px solid #ddd;
-  margin:15px 0;
+.education hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+/* Cards reviews */
+
+.reviews {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  padding: 18px;
+  border-radius: 10px;
+  background: white;
+  flex: 1;
+}
+
+.review-text {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.review-author strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.review-author span {
+  font-size: 14px;
+  color: #666;
 }
 
 /* Cambios generales */
-p{
+p {
   text-align: justify;
 }
 /* Footer de la pagina web */
