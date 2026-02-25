@@ -1,3 +1,7 @@
+/* =====================
+    GLOBAL (todas las páginas)
+===================== */
+
 html,
 body {
   height: 100%;
@@ -43,28 +47,43 @@ main {
   /* background:red; */
 }
 
+/* Cambios generales */
+p {
+  text-align: justify;
+}
+
+/* Footer de la pagina web */
+footer {
+  border-top: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+/* =====================
+    HOME PAGE
+===================== */
 
 /* Titulo de fronend developer */
-h1 {
+.home h1 {
   text-align: center;
   padding-top: 20px;
   margin: 20px;
 }
-.container > p {
+.home .container > p {
   text-align: center;
 }
 
 /* Estilo para las main cards  */
 
 /* fila de cards */
-.main-cards {
+.home .main-cards {
   display: flex;
   gap: 20px;
   margin-top: 30px;
 }
 
 /* estilo card */
-.card {
+.home .card {
   border: 1px solid #ccc;
   padding: 20px;
   flex: 1;
@@ -73,62 +92,62 @@ h1 {
 }
 
 /* Card projects */
-.projects p {
+.home .projects p {
   margin: 30px;
   border-bottom: 1px solid #ddd;
 }
 
 /* Card Work Experience */
 
-.experience .job {
+.home .experience .job {
   margin: 15px 0;
 }
-.experience h4 {
+.home .experience h4 {
   margin-bottom: 5px;
 }
-.experience a {
+.home .experience a {
   color: #1a73e8;
   text-decoration: none;
   font-size: 14px;
 }
-.experience a:hover {
+.home .experience a:hover {
   text-decoration: underline;
 }
-.experience hr {
+.home .experience hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 15px 0;
 }
 /* Card Work Education */
 
-.education h4 {
+.home .education h4 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
-.courses {
+.home .courses {
   list-style: none;
   padding: 0;
 }
-.courses li {
+.home .courses li {
   margin: 6px 0;
 }
-.courses li::before {
+.home .courses li::before {
   content: "– ";
 }
-.education hr {
+.home .education hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 15px 0;
 }
 /* Cards reviews */
 
-.reviews {
+.home .reviews {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
-.review-card {
+.home .review-card {
   border: 1px solid #ccc;
   padding: 18px;
   border-radius: 10px;
@@ -136,29 +155,29 @@ h1 {
   flex: 1;
 }
 
-.review-text {
+.home .review-text {
   margin-bottom: 15px;
   line-height: 1.4;
 }
 
-.review-author strong {
+.home .review-author strong {
   display: block;
   margin-bottom: 3px;
 }
 
-.review-author span {
+.home .review-author span {
   font-size: 14px;
   color: #666;
 }
 
-/* Cambios generales */
-p {
-  text-align: justify;
-}
-/* Footer de la pagina web */
+/* =====================
+    PROJECTS PAGE
+===================== */
 
-footer {
-  border-top: 1px solid #ccc;
-  padding: 5px;
-  text-align: center;
-}
+/* =====================
+    ARTICLES PAGE
+===================== */
+
+/* =====================
+    CONTACT PAGE
+===================== */
