@@ -1,28 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FrontEnd</title>
 
-    <link rel="stylesheet" href="Assets/css/styles.css">
-  </head>
-  <body class="contact-page">
-    <header>
-      <nav class="nav">
-        <div>Jordan Carvajal</div>
-        <ul class="menu">
-          <li><a href="Index.html">Inicio</a></li>
-          <li><a href="projects.html">Proyectos</a></li>
-          <li><a href="articles.html">Articulos</a></li>
-          <li><a href="contact.html">Contactos</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Contactos
-    </h1>
-    <footer class="footer">
-        © all rights reserved 2026
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrontEnd</title>
+
+  <link rel="stylesheet" href="Assets/css/styles.css" />
+</head>
+
+<body class="contact-page">
+  <header>
+    <nav class="nav">
+      <div>Jordan Carvajal</div>
+      <ul class="menu">
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="articles.html">Articulos</a></li>
+        <li><a href="contact.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Contactanos</h1>
+    <section class="contact-form">
+      <form action="" method="post">
+        <div class="form-group">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+        </div>
+        <div class="form-group">
+          <input type="number" name="telefono" id="telefono" placeholder="Telefono" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="txtArea" id="txtArea" rows="4" placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+  <footer class="footer">© all rights reserved 2026</footer>
+</body>
+
 </html>
