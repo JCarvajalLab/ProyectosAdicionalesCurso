@@ -1,0 +1,356 @@
+/* =====================
+   GLOBAL (todas las páginas)
+===================== */
+
+/* Aplica box-sizing a todos los elementos */
+* {
+  box-sizing: border-box; /* Incluye padding y border dentro del tamaño total */
+}
+
+/* Ajusta altura y elimina margen por defecto */
+html,
+body {
+  height: 100%; /* Permite que flex funcione correctamente */
+  margin: 0; /* Quita margen del navegador */
+}
+
+/* Variables globales reutilizables */
+:root {
+  --color-background: #f5f5f5; /* Fondo general */
+  --color-card: #ffffff; /* Fondo de tarjetas */
+  --color-primary: #1a73e8; /* Azul principal */
+  --color-text: #000000; /* Color texto principal */
+  --color-muted: #666666; /* Texto secundario */
+  --color-border: #ccc; /* Bordes generales (nuevo agregado) */
+}
+
+/* Configuración principal del body */
+body {
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Organiza verticalmente */
+  min-height: 100vh; /* Altura mínima pantalla completa */
+  padding: 20px; /* Espaciado interno móvil */
+  font-family: "Inter", sans-serif; /* Fuente principal */
+  background: var(--color-background); /* Fondo usando variable */
+  color: var(--color-text); /* Color texto */
+}
+
+/* Hace que main empuje el footer abajo */
+main {
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+/* Títulos en negrita */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+/* Texto normal */
+p,
+li,
+a,
+span {
+  font-weight: 400;
+  line-height: 1.6; /* Mejora legibilidad */
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.nav {
+  display: flex; /* Flexbox activado */
+  flex-direction: column; /* Móvil vertical */
+  align-items: center; /* Centrado horizontal */
+  padding: 15px 30px; /* Espaciado */
+  border-bottom: 1px solid var(--color-border); /* Línea inferior */
+}
+
+.menu {
+  display: flex; /* Flex activado */
+  flex-direction: column; /* Móvil vertical */
+  gap: 15px; /* Espacio entre links */
+  list-style: none; /* Quita viñetas */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none; /* Quita subrayado */
+  color: var(--color-text);
+}
+
+/* =====================
+   CONTENEDOR GENERAL
+===================== */
+
+.container {
+  max-width: 1200px; /* Ancho máximo */
+  margin: auto; /* Centrado horizontal */
+}
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+  border-top: 1px solid var(--color-border); /* Agrega una línea superior para separar el footer del contenido */
+  padding: 15px; /* Espacio interno entre el borde y el contenido del footer */
+  margin: 50px; /* Margen externo alrededor del footer (lo separa del resto del layout) */
+  text-align: center; /* Centra horizontalmente el texto dentro del footer */
+}
+
+/* =====================
+   CARD GLOBAL
+===================== */
+
+.card {
+  border: 1px solid var(--color-border); /* Borde alrededor de la tarjeta */
+  padding: 20px; /* Espacio interno entre contenido y borde */
+  border-radius: 10px; /* Redondea las esquinas de la tarjeta */
+  background: var(--color-card); /* Aplica color de fondo definido en :root */
+  flex: 1; /* Permite que la tarjeta crezca y ocupe espacio disponible dentro de un contenedor flex */
+}
+
+/* =====================
+   HOME PAGE
+===================== */
+
+.home h1 {
+  text-align: center; /* Centra el título principal */
+  padding-top: 20px; /* Agrega espacio superior interno */
+  margin: 20px; /* Margen externo alrededor del título */
+}
+
+.home .container > p {
+  text-align: center; /* Centra el párrafo que está directamente dentro del container */
+}
+
+.home .main-cards {
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Organiza las tarjetas verticalmente en móvil */
+  gap: 20px; /* Espacio entre cada tarjeta */
+  margin-top: 30px; /* Separación superior respecto al contenido anterior */
+}
+
+.home .projects p {
+  margin: 30px; /* Margen alrededor del texto de proyectos */
+  border-bottom: 1px solid var(--color-border); /* Línea inferior decorativa */
+}
+
+.home .experience .job {
+  margin: 15px 0; /* Espacio vertical entre cada experiencia laboral */
+}
+
+.home .experience h4 {
+  margin-bottom: 5px; /* Reduce espacio inferior del subtítulo */
+}
+
+.home .experience a {
+  color: var(--color-primary); /* Aplica color azul principal a los enlaces */
+  text-decoration: none; /* Quita subrayado */
+  font-size: 14px; /* Reduce tamaño del enlace */
+}
+
+.home .experience a:hover {
+  text-decoration: underline; /* Agrega subrayado cuando el mouse pasa encima */
+}
+
+.home .experience hr,
+.home .education hr {
+  border: none; /* Elimina borde por defecto */
+  border-top: 1px solid var(--color-border); /* Crea línea horizontal personalizada */
+  margin: 15px 0; /* Espacio vertical alrededor de la línea */
+}
+
+.home .education h4 {
+  margin-top: 15px; /* Espacio superior */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.home .courses {
+  list-style: none; /* Quita los puntos de lista */
+  padding: 0; /* Elimina sangría izquierda */
+}
+
+.home .courses li {
+  margin: 6px 0; /* Espacio vertical entre cada curso */
+}
+
+.home .courses li::before {
+  content: "– "; /* Inserta un guion antes de cada curso como elemento decorativo */
+}
+
+.home .reviews {
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Organiza verticalmente en móvil */
+  gap: 20px; /* Espacio entre cada reseña */
+  margin-top: 20px; /* Separación superior */
+}
+
+.home .review-card {
+  border: 1px solid var(--color-border); /* Borde de la tarjeta */
+  padding: 18px; /* Espacio interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  background: var(--color-card); /* Fondo blanco */
+  flex: 1; /* Permite que se adapte al ancho disponible */
+}
+
+.home .review-text {
+  margin-bottom: 15px; /* Espacio inferior del texto */
+  line-height: 1.4; /* Altura de línea para mejor lectura */
+}
+
+.home .review-author strong {
+  display: block; /* Hace que el nombre ocupe línea completa */
+  margin-bottom: 3px; /* Espacio inferior */
+}
+
+.home .review-author span {
+  font-size: 14px; /* Reduce tamaño del texto */
+  color: var(--color-muted); /* Aplica color secundario */
+}
+
+/* =====================
+   PROJECTS PAGE
+===================== */
+
+.projects-page h1 {
+  text-align: center; /* Centra título */
+  padding-top: 20px; /* Espacio interno superior */
+  margin: 20px; /* Margen externo */
+}
+
+.projects-page .container > p {
+  text-align: center; /* Centra párrafo descriptivo */
+}
+
+.projects-page .main-cards {
+  display: grid; /* Activa CSS Grid */
+  grid-template-columns: 1fr; /* Una columna en móvil */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin-top: 30px; /* Separación superior */
+}
+
+.projects-page img {
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  height: auto; /* Mantiene proporción original */
+}
+
+/* =====================
+   ARTICLES PAGE
+===================== */
+
+.articles-page h1 {
+  text-align: center; /* Centra el título */
+  padding-top: 20px; /* Espacio superior */
+  margin: 20px; /* Margen externo */
+}
+
+.articles-page .container > p {
+  text-align: center; /* Centra texto introductorio */
+}
+
+.articles-page .articles {
+  display: grid; /* Activa grid */
+  gap: 20px; /* Espacio entre artículos */
+  margin-top: 30px; /* Separación superior */
+}
+
+.articles-page .article-card {
+  border: 1px solid var(--color-border); /* Borde tarjeta */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  background: var(--color-card); /* Fondo blanco */
+}
+
+.articles-page time {
+  font-size: 14px; /* Reduce tamaño fecha */
+  color: var(--color-muted); /* Color gris secundario */
+}
+
+/* =====================
+   CONTACT PAGE
+===================== */
+
+.contact-page .container {
+  max-width: 600px; /* Limita ancho máximo */
+  width: 100%; /* Permite ocupar ancho disponible */
+  margin: 50px auto; /* Espacio vertical y centrado horizontal */
+  border: 1px solid var(--color-border); /* Borde exterior */
+  padding: 20px; /* Espacio interno */
+  border-radius: 30px; /* Bordes muy redondeados */
+  background: var(--color-card); /* Fondo blanco */
+}
+
+.contact-page h1 {
+  text-align: center; /* Centra título */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.contact-page .form-group {
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Apila label e input verticalmente */
+  margin-bottom: 15px; /* Espacio entre campos */
+}
+
+.contact-page input,
+.contact-page textarea {
+  padding: 10px; /* Espacio interno */
+  border: 1px solid var(--color-border); /* Borde campo */
+  border-radius: 6px; /* Esquinas redondeadas */
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  outline: none; /* Quita borde azul por defecto del navegador */
+  border-color: var(--color-primary); /* Cambia color del borde al enfocar */
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2); /* Agrega halo azul visual */
+}
+
+.contact-page button {
+  padding: 12px 30px; /* Espacio interno botón */
+  border: none; /* Quita borde */
+  background: var(--color-primary); /* Fondo azul */
+  color: var(--color-card); /* Texto blanco */
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia cursor a mano */
+  display: block; /* Permite centrar */
+  margin: 20px auto 0; /* Centrado horizontal */
+  font-size: 15px; /* Tamaño texto */
+}
+
+.contact-page button:hover {
+  opacity: 0.9; /* Reduce ligeramente opacidad al pasar mouse */
+}
+
+/* =====================
+   MEDIA QUERY
+===================== */
+
+@media (min-width: 768px) {
+  body {
+    padding: 40px; /* Aumenta padding en pantallas grandes */
+  }
+
+  .nav {
+    flex-direction: row; /* Navbar horizontal */
+    justify-content: space-between; /* Separa logo y menú */
+  }
+
+  .menu {
+    flex-direction: row; /* Menú horizontal */
+  }
+
+  .home .main-cards,
+  .home .reviews {
+    flex-direction: row; /* Cambia tarjetas a horizontal */
+  }
+
+  .projects-page .main-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en escritorio */
+  }
+}

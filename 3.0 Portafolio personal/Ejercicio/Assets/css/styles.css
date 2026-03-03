@@ -19,11 +19,11 @@ body {
 }
 
 body {
+  display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
   min-height: 100vh;
-  display: flex;
-  padding: 40px;
+  padding: 20px; /* móvil */
   background: var(--color-background);
 }
 main {
@@ -48,17 +48,19 @@ span {
 /* Header de la pagina web */
 .nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; /* ← móvil */
   align-items: center;
   padding: 15px 30px;
   border-bottom: 1px solid #ccc;
 }
 .menu {
   display: flex;
-  gap: 25px;
+  flex-direction: column; /* ← móvil */
+  gap: 15px;
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 .menu a {
   text-decoration: none; /*quita la linea debajo del enlace */
@@ -244,7 +246,8 @@ footer {
   margin: 15px 0;
 }
 .projects-page img {
-  max-width: 350px;
+  width: 100%;
+  height: auto;
 }
 /* =====================
     ARTICLES PAGE
@@ -280,7 +283,7 @@ footer {
 ===================== */
 
 .contact-page .container {
-  max-width: 600px;   /* ← cambio importante */
+  max-width: 600px; /* ← cambio importante */
   width: 100%;
   margin-top: 50px;
   border: 1px solid #ccc;
@@ -312,6 +315,13 @@ footer {
   border-radius: 6px;
 }
 
+.contact-page input:focus,
+.contact-page textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
 .contact-page button {
   padding: 12px 30px;
   border: none;
@@ -332,19 +342,25 @@ footer {
 ===================== */
 
 @media (min-width: 768px) {
-  .home .main-cards {
-    flex-direction: row; /* ← escritorio */
+  body {
+    padding: 40px; /* Aumenta padding en pantallas grandes */
   }
 
+  .nav {
+    flex-direction: row; /* Navbar horizontal */
+    justify-content: space-between; /* Separa logo y menú */
+  }
+
+  .menu {
+    flex-direction: row; /* Menú horizontal */
+  }
+
+  .home .main-cards,
   .home .reviews {
-    flex-direction: row;
+    flex-direction: row; /* Cambia tarjetas a horizontal */
   }
-}
-
-@media (min-width: 769px) {
 
   .projects-page .main-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en escritorio */
   }
-
 }
